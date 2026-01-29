@@ -31,7 +31,7 @@ public class LocationForegroundService extends Service {
     private static final int NOTIF_ID = 1001;
 
     // Change this back to 5 * 60 * 1000L for real requirement (5 minutes)
-    private static final long INTERVAL_MS = 5 * 1000L; // 5 seconds test
+    private static final long INTERVAL_MS = 5 * 60 * 1000L; // 5 seconds test
 
     private FusedLocationProviderClient fusedClient;
 
