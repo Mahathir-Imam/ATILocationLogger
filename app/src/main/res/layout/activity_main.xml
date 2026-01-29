@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/app_name"
+        app:titleCentered="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Location Service" />
+
+        <Button
+            android:id="@+id/btnStopService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Stop Location Service" />
+
+        <EditText
+            android:id="@+id/etApiInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Post ID (1-100)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnFetchApi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Fetch from API" />
+
+        <TextView
+            android:id="@+id/tvApiResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="API result will show here" />
+
+        <Button
+            android:id="@+id/btnShowLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Show Saved Location Logs" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/tvLogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Logs will show here"
+                android:textSize="14sp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
